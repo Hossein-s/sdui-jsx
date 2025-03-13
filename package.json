@@ -1,0 +1,32 @@
+{
+  "name": "sdui-tsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -r dist && tsc && cp package.json dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cp": "^0.2.0",
+    "prettier": "^3.5.3",
+    "rm": "^0.1.8",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./jsx-runtime": {
+      "import": "./runtime.js",
+      "require": "./runtime.js",
+      "types": "./runtime.d.ts"
+    }
+  }
+}
